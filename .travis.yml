@@ -16,3 +16,10 @@ script:
   - cargo build --verbose --release
   - cargo test --verbose
 
+deploy:
+  provider: releases
+  api_key: '$GITHUB_API_KEY'
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true
