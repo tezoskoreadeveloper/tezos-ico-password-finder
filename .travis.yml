@@ -30,7 +30,7 @@ deploy:
   name: $TRAVIS_TAG
   api_key: '$GITHUB_API_KEY'
   file:
-  - target/release/*.*
+  - target/release/tezos-ico-password-finder
   skip_cleanup: true
   on:
     branch: master
