@@ -16,10 +16,21 @@ script:
   - cargo build --verbose --release
   - cargo test --verbose
 
+
+before_deploy:
+  - export TRAVIS_TAG="1.0.$TRAVIS_BUILD_NUMBER"
+  - echo "$TRAVIS_TAG" "$TRAVIS_COMMIT"
+  - git tag "$TRAVIS_TAG" "$TRAVIS_COMMIT"
+  - ls -R *
+  
 deploy:
   provider: releases
+  tag_name: $TRAVIS_TAG
+  target_commitish: $TRAVIS_COMMIT
+  name: $TRAVIS_TAG
   api_key: '$GITHUB_API_KEY'
-  file: "FILE TO UPLOAD"
+  file:
+  - target/release/*.*
   skip_cleanup: true
   on:
     tags: true
