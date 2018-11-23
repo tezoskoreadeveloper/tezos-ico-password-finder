@@ -75,7 +75,6 @@ So you have to run this program in the command prompt.
 ## Support OS
 Windows
  > Supported
- > x64 Prebuilt binary : https://github.com/tezoskoreadeveloper/tezos-ico-password-finder/releases/download/1.0.2/tezos-ico-password-finder.exe
    
 MacOs
  > Supported
