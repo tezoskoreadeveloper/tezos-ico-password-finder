@@ -78,10 +78,10 @@ Windows
  > x64 Prebuilt binary : https://github.com/tezoskoreadeveloper/tezos-ico-password-finder/releases/download/1.0.2/tezos-ico-password-finder.exe
    
 MacOs
- > Comming soon  
+ > Supported
 
 Linux
- > Comming soon
+ > Supported
  
 ## License
 See LICENSE.
